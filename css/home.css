@@ -264,13 +264,26 @@ img {
         }
       }
 
+/* Mission */
 
+.overlay{
+  text-align: center;
+  margin-top: 50px;
+}
+.overlay h3, p {
+  text-align: center;
+}
+.overlay p {
+  font-style: italic;
+  padding-top: 20px;
+  font-size: 1.2rem;
+}
 
-
-
-
-
-
+/* our projects */
+.ourprojects{
+  text-align: center;
+  margin-top: 160px;
+}
 
 
 
@@ -280,9 +293,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     flex-wrap: wrap;
     gap: 100px 50px;
-    padding: 100px 50px;
+    padding: 80px 50px;
     /*background-color: #023180;
     border-radius: 20px;*/
   }
@@ -291,7 +305,8 @@ img {
     position: absolute;
     left: 0;
     top: 0;
-    width: 10%; /* Pas dit aan op basis van hoeveel ruimte je wilt dat de afbeelding inneemt */
+    width: 10%;
+    align-items: center;
     }
   
   .container .custom-card {
@@ -349,7 +364,7 @@ img {
     height: 250px;
    
   }
-  .container .custom-card .custom-content h2 {
+  .container .custom-card .custom-content h3 {
     font-size: 1.5rem;
     font-weight: 500;
     color: #333333;

@@ -62,24 +62,35 @@ $result = $conn->query($sql);
 
 <img src="images/Home/Surgery-home2.jpg" alt="surgery" class="surgery-img" width="620" height="400">
 
+
+<div class="overlay">
+            <h2>Our Mission</h2>
+            <p>Inspire healthcare professionals to optimize the patient-journey by means of technological innovation.</p>
+        </div>
+        
+            
+        <div class="ourprojects">
+  <h2>Our Projects</h2>
+  </div>
+       
 <?php
 if ($result->num_rows > 0) {
     //print_r ($result->fetch_all());
 while($row = mysqli_fetch_assoc($result) ){
 
 ?>
- <div class="container">
+<div class="container">
 <div class="custom-card">
           <div class="img-box"><img src="<?php echo $row["image"]; ?>"></div>
           <div class="custom-content">
-            <h2><?php echo $row["name"]; ?></h2><br>
+            <h3><?php echo $row["name"]; ?></h3><br>
             <p><span><?php echo $row["project_title"]; ?></span><br><?php echo $row["description"]; ?></p>
             <a href="">Read More</a>
 </div>
 
         </div>
-        
-        
+    
+
 
         <?php
 }
