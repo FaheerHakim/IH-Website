@@ -13,3 +13,4 @@ if ($conn->connect_error) {
 
 
 // Step 3: Display data in HTML
+?>
