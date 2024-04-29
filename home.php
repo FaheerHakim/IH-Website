@@ -13,9 +13,11 @@ $result = $conn->query($sql);
     <title>Home | InspireHealth</title>
     <!-- connect with css-->
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+
 
     <script type="text/javascript" src="./../includes/code.jquery.com_jquery-3.7.0.min.js" ></script>
-	<script type="text/javascript" src="./../includes/init_page.js"></script>
+	  <script type="text/javascript" src="./../includes/init_page.js"></script>
 
 </head>
 <body>
@@ -24,23 +26,11 @@ $result = $conn->query($sql);
 ?>
 <!--<div id="logo"></div>-->
 <!-- Nav Menu -->
-<header class="nav-top">
+<!--<header class="nav-top">
 <a href=""><img src="images/logos/TRANSPARENT_LOGO.png" id="logo" alt="logo-IH" width="190" height="70"></a>
-<!--<div id="b1" class="box">
-    <svg id="i1" class="icon" viewBox="0 0 100 100">
-      <path id="top-line-1"     d="M30,37 L70,37 Z"></path>
-      <path id="middle-line-1" 	d="M30,50 L70,50 Z"></path>
-      <path id="bottom-line-1" 	d="M30,63 L70,63 Z"></path>
-    </svg>
-  </div>-->
+
+
 <nav class="nav-links">
-<!--<div id="b1" class="box">
-    <svg id="i1" class="icon" viewBox="0 0 100 100">
-      <path id="top-line-1"     d="M30,37 L70,37 Z"></path>
-      <path id="middle-line-1" 	d="M30,50 L70,50 Z"></path>
-      <path id="bottom-line-1" 	d="M30,63 L70,63 Z"></path>
-    </svg>
-  </div>-->
   <a href="#">Home</a>
   <a href="#">Projects</a>
   <a href="#">Team</a>
@@ -49,10 +39,28 @@ $result = $conn->query($sql);
   <a href="#">Contact</a>
   <div id="indicator"></div>
 </nav>
-</header>
+</header>-->
+
+<header>
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='#'><img src='./images/logos/TRANSPARENT_LOGO.png'></a></li>
+            <input type='checkbox' id='check' >
+            <span class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
+    </header>
+
 <img src="images/Home/Surgery-home2.jpg" alt="surgery" class="surgery-img" width="620" height="400">
-
-
 
 <?php
 if ($result->num_rows > 0) {
@@ -80,8 +88,6 @@ while($row = mysqli_fetch_assoc($result) ){
 
         ?>
         </div>
-        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/409445/animateAnything.js"></script>
-        <script src="js/script.js"></script>
 
 </body>
 </html>
