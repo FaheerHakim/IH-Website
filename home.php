@@ -72,7 +72,7 @@ while($row = mysqli_fetch_assoc($result) ){
 <div class="custom-card">
           <div class="img-box"><img src="<?php echo $row["image"]; ?>"></div>
           <div class="custom-content">
-            <h2><?php echo $row["name"]; ?></h2>
+            <h2><?php echo $row["name"]; ?></h2><br>
             <p><span><?php echo $row["project_title"]; ?></span><br><?php echo $row["description"]; ?></p>
             <a href="">Read More</a>
 </div>
