@@ -69,17 +69,23 @@ $result = $conn->query($sql);
         </div>
         
             
-        <div class="ourprojects">
-  <h2>Our Projects</h2>
-  </div>
+        
+  
        
+
+<div class="container">
+<div id="table">
+    <div id="top">  
+        <h2>Our Projects</h2>
+    </div>
+</div>
 <?php
 if ($result->num_rows > 0) {
     //print_r ($result->fetch_all());
 while($row = mysqli_fetch_assoc($result) ){
 
 ?>
-<div class="container">
+
 <div class="custom-card">
           <div class="img-box"><img src="<?php echo $row["image"]; ?>"></div>
           <div class="custom-content">

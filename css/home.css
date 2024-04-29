@@ -280,12 +280,24 @@ img {
 }
 
 /* our projects */
-.ourprojects{
-  text-align: center;
-  margin-top: 160px;
+#table{
+  width:100%;
+  display:table;
 }
 
+#top {
+  display: table-cell;
+  position: relative;
+  width:100%;
+  height: 100px;
+  vertical-align:middle;
+}
 
+#top h2{
+  text-align: center;
+  color: black;
+
+} 
 
 /* Cards */
 .container {
@@ -317,10 +329,11 @@ img {
     width: 350px;
     max-width: 100%;
     height: 310px;
-    background: #FFF;
+    background: #023180;
     border-radius: 20px;
     transition: 0.5s;
     box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+   
   }
   .container .custom-card:hover {
     height: 400px;
@@ -331,7 +344,7 @@ img {
     top: 20px;
     width: 300px;
     height: 220px;
-    background: #333;
+    background: #fff;
     border-radius: 12px;
     overflow: hidden;
     transition: 0.5s;
@@ -358,6 +371,7 @@ img {
     text-align: center;
     overflow: hidden;
     transition: 0.5s;
+    color: #fff;
   }
   .container .custom-card:hover .custom-content {
     top: 130px;
@@ -367,12 +381,12 @@ img {
   .container .custom-card .custom-content h3 {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #333333;
+    color: #fff;
   }
   
   
   .container .custom-card .custom-content p span{
-    color: #333;
+    color: #fff;
     font-weight: 500; 
     font-size: 1.2rem;
 
