@@ -348,12 +348,12 @@ img {
   /* Styling */
   .box {
     background: #F2F2F2;
-    color: #000;
+    color: #023180;
     text-align: center;
     justify-content: center;
     padding: 10px;
     border-radius: 3px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #023180;
     transition: 0.5s;
   }
 
