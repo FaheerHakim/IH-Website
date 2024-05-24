@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'roboto', sans-serif;
+}
+body{
+  background-color: #F2F2F2;
+}
+
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: #fff;
+  padding: 20px 40px;
+}
+.logo img {width: 130px;}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #023180;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #79d879;
+  transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+  position: absolute;
+  color: #023180;
+  cursor: pointer;
+  font-size: 2rem;
+  display: none;
+}
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+#check {display: none;}
+@media(max-width: 610px){
+  .menu {
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      width: 80%;
+      height: 70vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      background-color: #023180;
+      transition: all 0.2s ease-in-out;
+      
+  }
+  .menu li {margin-top: 40px;}
+  .menu li a {padding: 10px; color: #fff;}
+  .open-menu , .close-menu {display: block;}
+  .close-menu {color: #fff;}
+  #check:checked ~ .menu {right: 0;}
+}
+
+
+
+/* section */
+.team-section{
+  margin-top: 75px;
+}
+.team-title h1{
+  font-size: 50px;
+  color: #023180;
+  text-align: center;
+  position: relative;
+}
+.team-cards{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.team-card{
+  background-color: #023180;
+  padding: 20px;
+  margin: 0px 20px;
+  border-radius: 35px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-align: center;
+  width: calc(33.33% - 20px);
+  color: #fff;
+}
+
+
+.team-img img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.team-detail h3{
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 15px 0px;
+}
+.team-detail p{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+ 
+}
+
+@media screen and (max-width: 768px){
+  .team-cards{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .team-card{
+    width: 85%;
+    margin: 25px auto;
+  }
+  
+}
+
+/* Footer */      
+.container-f{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background: linear-gradient(100deg, #023180, #79d879);
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	/*text-transform: capitalize;*/
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ffffff;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #bbbbbb;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+  

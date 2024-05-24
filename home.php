@@ -14,7 +14,7 @@ $result = $conn->query($sql);
     <title>Home | InspireHealth</title>
     <!-- connect with css-->
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></head>
 
 
     <script type="text/javascript" src="./../includes/code.jquery.com_jquery-3.7.0.min.js" ></script>
@@ -34,10 +34,10 @@ $result = $conn->query($sql);
             <span class="menu">
                 <li><a href="home.php">Home</a></li>
                 <li><a href="projects.php">Projects</a></li>
-                <li><a href="">Team</a></li>
+                <li><a href="team.php">Team</a></li>
                 <li><a href="">Jobs</a></li>
                 <li><a href="">News</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
             </span>
             <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
